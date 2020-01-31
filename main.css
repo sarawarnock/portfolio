@@ -2,8 +2,7 @@
     box-sizing: border-box;
 }
 
-body {   
-    text-align: center;
+body {
     width: 100%;
 }
 
@@ -18,7 +17,7 @@ header {
 h1 {
     font-size: 32px;
     text-transform: uppercase;
-    line-height: 28px;
+    line-height: 36px;
     color: #FA7A68;
 }
 
@@ -41,25 +40,33 @@ li {
 } */
 
 h2 {
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Noto Serif SC', serif; 
     font-size: 24px;
     line-height: 26px;
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Noto Serif SC', serif;
     font-size: 20px;
     line-height: 24px;
 }
 
+.project {
+    text-align: center;
+}
+
 p {
     font-family: 'Montserrat', sans-serif; 
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.proj-desc {
+    text-align: center;
 }
 
 section {
     padding: 20px;
-    font-family: 'Montserrat', sans-serif;  
 }
 
 footer {
