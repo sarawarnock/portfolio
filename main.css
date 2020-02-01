@@ -120,6 +120,18 @@ footer {
     list-style-type: none;
 }
 
+.contact-icon {
+    list-style-type: none;
+    display: inline;
+    color: #72FDB8;
+}
+
+.social {
+    color: #72FDB8;
+    width: 70px;
+    height: 70px;
+}
+
 @media screen and (min-width: 760px) {
     
     body {
