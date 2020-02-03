@@ -60,6 +60,7 @@ h1 {
 }
 
 .bio-p1 {
+    font-family: 'Montserrat', sans-serif; 
     width: 500px;
     line-height: 28px;
     display: inline-block;
@@ -67,7 +68,7 @@ h1 {
 }
 
 .avatar {
-    display: none; 
+    display: none;  
 }   
 
 h2 {
@@ -92,13 +93,18 @@ h3 {
 }
 
 p {
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 16px;
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 20px;
     line-height: 22px;
+    text-align: center;
+    color: black;
 }
 
 .proj-desc {
+    font-family: 'Montserrat', sans-serif; 
     text-align: center;
+    font-size: 16px;
+    line-height: 22px;
     margin: 10px;
 }
 
@@ -109,9 +115,8 @@ footer {
     font-size: 18px;
     line-height: 22px;
     color: #72FDB8;
-    text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .contact {
@@ -120,16 +125,8 @@ footer {
     list-style-type: none;
 }
 
-.contact-icon {
-    list-style-type: none;
-    display: inline;
+.fab {
     color: #72FDB8;
-}
-
-.social {
-    color: #72FDB8;
-    width: 70px;
-    height: 70px;
 }
 
 @media screen and (min-width: 760px) {
@@ -228,13 +225,16 @@ footer {
     }
     
     p {
-        font-family: 'Montserrat', sans-serif; 
-        font-size: 16px;
+        font-family: 'Bebas Neue', cursive; 
+        font-size: 20px;
         line-height: 22px;
     }
     
     .proj-desc {
         text-align: center;
+        font-family: 'Montserrat', sans-serif; 
+        font-size: 16px;
+        line-height: 22px;
     }
     
     footer {
@@ -244,12 +244,11 @@ footer {
         font-size: 18px;
         line-height: 22px;
         color: #72FDB8;
-        text-align: center;
     }
 
     .contact {
         color: #72FDB8;
         display: inline;
-        list-style-type: none;
+        text-align: center;
     }
 }
