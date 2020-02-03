@@ -35,7 +35,7 @@ header {
     width: 100%; 
 }
 
-h1 {
+.name {
     font-family: 'Bebas Neue', cursive;
     font-size: 42px;
     text-transform: uppercase;
@@ -84,12 +84,22 @@ h3 {
     text-align: center;
 }
 
+.portfolio {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 34px;
+    margin-top: 100px;
+    padding: 10px;
+    color: #72FDB8;
+    background-color: black;
+}
+
 .project {
     text-align: center;
     font-family: 'Bebas Neue', cursive; 
     font-size: 28px;
     line-height: 32px;
-    padding: 20px;
+    margin: 10px;
 }
 
 p {
@@ -108,6 +118,21 @@ p {
     margin: 10px;
 }
 
+.proj-img {
+    display: flex;
+    padding-bottom: 30px;
+    display: block;
+}
+
+.quiz-img {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 400px;
+    height: auto;
+    border: 1px solid black;
+}
+
 footer {
     background-color: black;
     padding: 15px;
@@ -121,12 +146,13 @@ footer {
 
 .contact {
     color: #72FDB8;
-    display: inline;
+    /* display: inline; */
     list-style-type: none;
 }
 
 .fab {
     color: #72FDB8;
+
 }
 
 @media screen and (min-width: 760px) {
@@ -190,7 +216,7 @@ footer {
     }
     
     .avatar {
-        display: inline;
+        display: inline-block;
         width: 400px;
         height: auto;
         border: 1px solid black;
@@ -236,6 +262,19 @@ footer {
         font-size: 16px;
         line-height: 22px;
     }
+
+    .proj-img {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 30px;
+    }
+    
+    .quiz-img {
+        display: inline-block;
+        width: 400px;
+        height: auto;
+        border: 1px solid black;
+    }
     
     footer {
         background-color: black;
@@ -249,6 +288,5 @@ footer {
     .contact {
         color: #72FDB8;
         display: inline;
-        text-align: center;
     }
 }
