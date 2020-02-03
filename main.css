@@ -16,23 +16,40 @@ header {
     padding-bottom: 20px;
 }
 
-.navbar ul {
-    display: none;
-} 
-
 .nav-class {
     color: #FA7A68;
 }
 
-.navbar {
-    display: flex;
+ .navbar ul {
+    display: none;
 }
 
-.navbar .hamburger {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
+.navbar label {
+    display: inline-block;
     width: 100%; 
+    color: white;
+}
+
+label[for="hamburger"] {
+    font-size: 30px;
+}
+
+/* .navbar #hamburger {
+    display: inline-block;
+    border-top: 1px solid black;
+    color: white;
+} */
+
+.navbar ul li {
+    display: block;
+}
+
+.navbar input:checked ~ ul {
+    display: block;
+}
+
+.navbar input {
+    visibility: hidden
 }
 
 .name {
@@ -178,16 +195,20 @@ footer {
         color: #7DFAF2;
     }
 
-    .navbar .hamburger {
+    .navbar #hamburger {
         display: none;
     }
-    
-    .navbar .menu {
+
+    .navbar label, #hamburger {
+        display: none;
+    }
+
+    .navbar ul {
         display: block;
     }
 
-    .navbar li {
-        display: inline;
+    .navbar ul li {
+        display: inline-block;
         padding: 15px;
         font-size: 18px;
         color: #FA7A68;
