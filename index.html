@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HTML wireframe</title>
+    <title>Sara Warnock's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
@@ -17,8 +17,8 @@
                 <label for="hamburger">&#9776;</label>
                 <input type="checkbox" id="hamburger"/>
                     <ul class="menu">
-                        <li><a class="nav-class" href="#">Bio</a></li>
-                        <li><a class="nav-class" href="#">Portfolio</a></li>
+                        <li><a class="nav-class cl-bio" href="#bio">Bio</a></li>
+                        <li><a class="nav-class cl-portfolio" href="#portfolio">Portfolio</a></li>
                         <li><a class="nav-class" href="https://www.linkedin.com/in/sara-warnock-40671085/" target="_blank">LinkedIn</a></li>
                         <li><a class="nav-class" href="https://github.com/sarawarnock" target="_blank">GitHub</a></li>
                 </ul>
@@ -29,7 +29,7 @@
             <h2>Hi! I’m Sara.</h2>
             <h3>I’m studying to be a full-stack developer through Thinkful’s Engineering program.</h3>
         </section>
-        <section class="bio">
+        <section id="bio" class="bio">
             <div class="bio-container">
                 <p class="bio-p1">I am especially interested in applying all of the skills I’ve learned at Thinkful in a job in the environmental sector. 
                 I am looking to put my Environmental Studies degree to use, and I believe with the addition of problem solving and software engineering skills, I’ll be able to do just that. 
@@ -37,26 +37,28 @@
                 As a life-long learner, I am constantly looking to challenge myself to acquire new skills. I am currently learning how to play the piano and read music! 
                 </p>
             </div>    
-            <img class="avatar" src="woman_avatar.png" alt="cartoon of woman"/>
+            <img class="avatar" src="woman_avatar.png" alt="cartoon of woman with glasses"/>
         </section>
 
         <section class="portfolio-container">
-            <h1 class="portfolio">Portfolio</h1>
+            <h1 id="portfolio" class="portfolio">Portfolio</h1>
         </section>
 
         <section>
             <h3 class="project">Quiz App</h3>
+                <div class="proj-div">
                 <p class="proj-desc">Take a quiz to find out how much you know about recycling! 
                     This quiz was created using JavaScript and jQuery. </p>
-                <p><a href="https://github.com/sarawarnock/quiz-app" target="_blank">Repo</a></p>
-                <p><a href="https://sarawarnock.github.io/quiz-app/" target="_blank">Live Site</a></p>
+                <p class="proj-link"><a href="https://github.com/sarawarnock/quiz-app" target="_blank">Repo</a></p>
+                <p class="proj-link"><a href="https://sarawarnock.github.io/quiz-app/" target="_blank">Live Site</a></p>
+                </div>
                 <div class="proj-img">
                     <img class="quiz-img" src="Screen Shot 2020-01-28 at 8.44.12 PM.png" alt="quiz app start page">
                     <img class="quiz-img" src="Screen Shot 2020-01-28 at 8.44.00 PM.png" alt="quiz app final page">
                 </div>
         </section>
 
-        <section>
+        <!-- <section>
             <h3 class="project">Project 2</h3>
         </section>
 
@@ -66,9 +68,9 @@
         
         <section>
             <h3 class="project">Project 4</h3>
-        </section>
+        </section> -->
     </main>
-    <footer role="content-info">
+    <footer role="contact-info">
         <ul class="contact">
             <li><a href="https://www.linkedin.com/in/sara-warnock-40671085/" target="_blank"><i class="fab fa-linkedin"></a></i></li>
             <li><a class="contact" href="mailto: sara@sarawarnock.com" class="fab">Say Hello</a></li>

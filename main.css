@@ -15,12 +15,19 @@ header {
     align-items: baseline;
     padding-bottom: 20px;
 }
+    
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 42px;
+    text-transform: uppercase;
+    color: #7DFAF2;
+}
 
 .nav-class {
     color: #FA7A68;
 }
 
- .navbar ul {
+.navbar ul {
     display: none;
 }
 
@@ -34,14 +41,9 @@ label[for="hamburger"] {
     font-size: 30px;
 }
 
-/* .navbar #hamburger {
-    display: inline-block;
-    border-top: 1px solid black;
-    color: white;
-} */
-
 .navbar ul li {
     display: block;
+    cursor: pointer;
 }
 
 .navbar input:checked ~ ul {
@@ -51,6 +53,10 @@ label[for="hamburger"] {
 .navbar input {
     visibility: hidden
 }
+
+a:visited {
+    color: inherit;
+  }
 
 .name {
     font-family: 'Bebas Neue', cursive;
@@ -103,27 +109,32 @@ h3 {
 .portfolio {
     text-align: center;
     font-family: 'Bebas Neue', cursive; 
-    font-size: 34px;
+    font-size: 36px;
     margin-top: 100px;
     padding: 10px;
-    color: #72FDB8;
+    color: #7DFAF2;
     background-color: black;
 }
 
 .project {
     text-align: center;
     font-family: 'Bebas Neue', cursive; 
-    font-size: 28px;
+    font-size: 32px;
     line-height: 32px;
     margin: 10px;
 }
 
-p {
-    font-family: 'Bebas Neue', cursive; 
-    font-size: 20px;
-    line-height: 22px;
+.proj-div {
     text-align: center;
+}
+
+.proj-link {
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 24px;
+    line-height: 24px;
     color: black;
+    display: inline-block;
+    margin: 15px;
 }
 
 .proj-desc {
@@ -155,42 +166,26 @@ footer {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 22px;
-    color: #72FDB8;
-}
-
-.contact {
-    color: #72FDB8;
-    display: inline-block;
-    list-style-type: none;
-    padding: 0;
     text-align: center;
 }
 
-.fab {
-    color: #72FDB8;
+.contact {
+    color: #7DFAF2;
+    /* color: #72FDB8; */
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
 }
 
-@media screen and (min-width: 760px) {
+.fab {
+    color: #7DFAF2;
+    margin: 10px;
+}
+
+@media screen and (min-width: 900px) {
     
     body {
         width: 100%;
-    }
-    
-    header {
-        background-color: black;
-        padding: 15px;
-        font-family: 'Montserrat', sans-serif;
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        padding-bottom: 20px;
-    }
-    
-    h1 {
-        font-family: 'Bebas Neue', cursive;
-        font-size: 42px;
-        text-transform: uppercase;
-        color: #7DFAF2;
     }
 
     .navbar #hamburger {
@@ -211,20 +206,11 @@ footer {
         font-size: 18px;
         color: #FA7A68;
     }
-
-    .headline {
-        padding-bottom: 15px;
-    }
     
     .bio-container {
         background-color: #FA7A68;
         width: 600px;
         height: auto;
-    }
-    
-    .bio {
-        display: flex;
-        justify-content: space-evenly;
     }
     
     .bio-p1 {
@@ -245,40 +231,6 @@ footer {
         font-size: 18px;
         color: #FA7A68;
     }
-    
-    h2 {
-        font-family: 'Bebas Neue', cursive; 
-        font-size: 36px;
-        text-align: center;
-    }
-    
-    h3 {
-        font-family: 'Montserrat', sans-serif; 
-        font-size: 20px;
-        line-height: 22px;
-        text-align: center;
-    }
-    
-    .project {
-        text-align: center;
-        font-family: 'Bebas Neue', cursive; 
-        font-size: 28px;
-        line-height: 32px;
-        padding: 20px;
-    }
-    
-    p {
-        font-family: 'Bebas Neue', cursive; 
-        font-size: 20px;
-        line-height: 22px;
-    }
-    
-    .proj-desc {
-        text-align: center;
-        font-family: 'Montserrat', sans-serif; 
-        font-size: 16px;
-        line-height: 22px;
-    }
 
     .proj-img {
         display: flex;
@@ -288,22 +240,8 @@ footer {
     
     .quiz-img {
         display: inline-block;
-        width: 400px;
+        width: 450px;
         height: auto;
         border: 1px solid black;
-    }
-    
-    footer {
-        background-color: black;
-        padding: 15px;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 18px;
-        line-height: 22px;
-        color: #72FDB8;
-    }
-
-    .contact {
-        color: #72FDB8;
-        display: inline-block;
     }
 }
