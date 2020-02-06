@@ -80,6 +80,7 @@ a:visited {
     height: auto;
     display: flex;
     padding: 15px;
+    max-width: 100%;
 }
 
 .bio-p1 {
@@ -158,6 +159,7 @@ h3 {
     width: 400px;
     height: auto;
     border: 1px solid black;
+    max-width: 100%;
 }
 
 footer {
@@ -223,6 +225,7 @@ footer {
         width: 400px;
         height: auto;
         border: 1px solid black;
+        max-width: 100%;
     }
     
     li {
