@@ -86,8 +86,9 @@ a:visited {
 .bio-p1 {
     font-family: 'Montserrat', sans-serif;
     line-height: 28px;
-    display: inline-block;
+    display: block;
     text-align: left;
+    /* margin: 10px; */
 }
 
 .avatar {
@@ -173,6 +174,7 @@ footer {
 
 .contact {
     color: #7DFAF2;
+    font-family: 'Montserrat', sans-serif; 
     /* color: #72FDB8; */
     display: inline-block;
     list-style-type: none;
