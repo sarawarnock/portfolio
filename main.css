@@ -78,7 +78,6 @@ a:visited {
     background-color: #FA7A68;
     width: 80%;
     height: auto;
-    display: flex;
     padding: 15px;
     max-width: 100%;
 }
@@ -137,6 +136,7 @@ h3 {
     color: black;
     display: inline-block;
     margin: 15px;
+    cursor: pointer;
 }
 
 .proj-desc {
@@ -170,6 +170,7 @@ footer {
     font-size: 18px;
     line-height: 22px;
     text-align: center;
+    cursor: pointer;
 }
 
 .contact {
