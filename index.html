@@ -15,10 +15,10 @@
             <label for="hamburger">&#9776;</label>
             <input type="checkbox" id="hamburger"/>
                 <ul class="menu">
-                    <li><a class="nav-class cl-bio" href="#bio">Bio</a></li>
-                    <li><a class="nav-class cl-portfolio" href="#portfolio">Portfolio</a></li>
-                    <li><a class="nav-class" href="https://www.linkedin.com/in/sarawarnock/" target="_blank">LinkedIn</a></li>
-                    <li><a class="nav-class" href="https://github.com/sarawarnock" target="_blank">GitHub</a></li>
+                    <li><a class="nav-class cl-bio" href="#bio">About Me</a></li>
+                    <li><a class="nav-class cl-projects" href="#projects">Projects</a></li>
+                    <li><a class="nav-class cl-skills" href="#skills">Professional Skills</a></li>
+                    <li><a class="nav-class cl-connect" href="#connect">Connect</a></li>
             </ul>
         </nav>
         <header role="banner">
@@ -28,8 +28,8 @@
 
 
         <section class="headline">
-            <h2>Hi! I’m Sara.</h2>
-            <h3>I’m studying to be a full-stack developer through Thinkful’s Engineering program.</h3>
+            <h2>About</h2>
+            <!-- <h3>I’m studying to be a full-stack developer through Thinkful’s Engineering program.</h3> -->
         </section>
         <section id="bio" class="bio">
             <div class="bio-container">
@@ -44,80 +44,98 @@
             <img class="avatar" src="woman_avatar.png" alt="cartoon of woman with glasses"/>
         </section>
 
-        <section class="portfolio-container">
-            <h2 id="portfolio" class="portfolio">Portfolio</h2>
+        <section class="projects-container">
+            <h2 id="projects" class="projects">Recent Projects</h2>
         </section>
 
         <section>
-            <h3 class="project">Quiz App</h3>
-                <div class="proj-div">
-                <p class="proj-desc">Take a quiz to find out how much you know about recycling! 
-                    <br>This quiz was created using: HTML/CSS/JavaScript/jQuery. 
-                </p>
-                <p class="proj-link"><a href="https://github.com/sarawarnock/quiz-app" target="_blank">Repo</a></p>
-                <p class="proj-link"><a href="https://sarawarnock.github.io/quiz-app/" target="_blank">Live Site</a></p>
-                </div>
-                <div class="proj-img">
-                    <img class="quiz-img" src="start.png" alt="quiz app start page">
-                    <img class="quiz-img" src="final.png" alt="quiz app final page">
-                </div>
+            <div class="project-container">
+                <h3 class="project">Quiz App</h3>
+                    <div class="proj-div">
+                        <p class="proj-desc">Take a quiz to find out how much you know about recycling! 
+                            <br>This quiz was created using: HTML/CSS/JavaScript/jQuery. 
+                        </p>
+                        <p class="proj-link"><a href="https://github.com/sarawarnock/quiz-app" target="_blank">Repo</a></p>
+                        <p class="proj-link"><a href="https://sarawarnock.github.io/quiz-app/" target="_blank">Live Site</a></p>
+                    </div>
+                    <div class="proj-img">
+                        <img class="quiz-img" src="start.png" alt="quiz app start page">
+                        <img class="quiz-img" src="final.png" alt="quiz app final page">
+                    </div>
+            </div>
         </section>
 
         <br>
 
         <section>
-            <h3 class="project">SmartenUp</h3>
-                <div class="proj-div">
-                    <p class="proj-desc">Learn more about your favorite topic with this app! This app pulls
-                        from the New York Times API and from the Listen API to bring the user both NYT articles and podcasts
-                        based on the search term they enter. Click on the link to get the full article while you listen to a pocast right in the app.
-                        <br>This app was created using: HTML/CSS/JavaScript/jQuery
-                    </p>
-                    <p class="proj-link"><a href="https://github.com/sarawarnock/smartenup" target="_blank">Repo</a></p>
-                    <p class="proj-link"><a href="https://sarawarnock.github.io/smartenup/" target="_blank">Live Site</a></p>
-                </div>
-                <div class="proj-img">
-                    <img class="api-img" src="startpage.png" alt="SmartenUp start page">
-                    <img class="api-img" src="searchresults.png" alt="SmartenUp example search results">
-                </div>
+            <div class="project-container">
+                <h3 class="project">SmartenUp</h3>
+                    <div class="proj-div">
+                        <p class="proj-desc">Learn more about your favorite topic with this app! This app pulls
+                            from the New York Times API and from the Listen API to bring the user both NYT articles and podcasts
+                            based on the search term they enter. Click on the link to get the full article while you listen to a pocast right in the app.
+                            <br>This app was created using: HTML/CSS/JavaScript/jQuery
+                        </p>
+                        <p class="proj-link"><a href="https://github.com/sarawarnock/smartenup" target="_blank">Repo</a></p>
+                        <p class="proj-link"><a href="https://sarawarnock.github.io/smartenup/" target="_blank">Live Site</a></p>
+                    </div>
+                    <div class="proj-img">
+                        <img class="api-img" src="startpage.png" alt="SmartenUp start page">
+                        <img class="api-img" src="searchresults.png" alt="SmartenUp example search results">
+                    </div>
+            </div>
         </section>
 
         <section>
-            <h3 class="project">MyMetcon Workout Creator</h3>
-                <div class="proj-div">
-                    <p class="proj-desc"> 
-                        Create a unique metabolic-conditioning workout with this app. This app uses randomization logic in the backend to create a unique workout each time you use it.
-                        This app has its own database of workout moves and you're guarenteed a different workout every time you create one! 
-                        Decide which muscle groups you want to work and how long you want to workout for and this app will do the rest. 
-                        <br>This app was created using: 
-                            <br>Front-End: HTML5, CSS3, JavaScript ES6, React
-                            <br>Back-End: Node.js, Express.js, Mocha, Chai, RESTful API Endpoints, Postgres
-                    </p>
-                    <p class="proj-link"><a href="https://github.com/sarawarnock/workout-creator-capstone-client" target="_blank">Client Repo</a></p>
-                    <p class="proj-link"><a href="https://github.com/sarawarnock/workout-creator-capstone-server" target="_blank">Server Repo</a></p>
-                    <p class="proj-link"><a href="https://workout-creator-capstone-client.vercel.app/" target="_blank">Live Site</a></p>
-                </div>
-                <!-- <div class="proj-img">
-                    <img class="workout-img" src="screenshots/landing-page.png" alt="MyMetcon landing page">
-                    <br>
-                    <img class="workout-img" src="screenshots/sign-up.png" alt="MyMetcon signup page">
-                    <br>
-                    <img class="workout-img" src="screenshots/log-in.png" alt="MyMetcon login page">
-                    <br>
-                    <img class="workout-img" src="screenshots/create-workout.png" alt="MyMetcon create workout page">
-                    <br>
-                    <img class="workout-img" src="screenshots/past-workouts.png" alt="MyMetcon past workouts page">
-                </div> -->
+            <div class="project-container">
+                <h3 class="project">MyMetcon Workout Creator</h3>
+                    <div class="proj-div">
+                        <p class="proj-desc"> 
+                            Create a unique metabolic-conditioning workout with this app. This app uses randomization logic in the backend to create a unique workout each time you use it.
+                            This app has its own database of workout moves and you're guarenteed a different workout every time you create one! 
+                            Decide which muscle groups you want to work and how long you want to workout for and this app will do the rest. 
+                            <br>This app was created using: 
+                                <br>Front-End: HTML5, CSS3, JavaScript ES6, React
+                                <br>Back-End: Node.js, Express.js, Mocha, Chai, RESTful API Endpoints, Postgres
+                        </p>
+                        <p class="proj-link"><a href="https://github.com/sarawarnock/workout-creator-capstone-client" target="_blank">Client Repo</a></p>
+                        <p class="proj-link"><a href="https://github.com/sarawarnock/workout-creator-capstone-server" target="_blank">Server Repo</a></p>
+                        <p class="proj-link"><a href="https://workout-creator-capstone-client.vercel.app/" target="_blank">Live Site</a></p>
+                    </div>
+                    <div class="proj-img">
+                        <img class="workout-img" src="screenshots/landing-page.png" alt="MyMetcon landing page">
+                        <br>
+                        <img class="workout-img" src="screenshots/sign-up.png" alt="MyMetcon signup page">
+                        <br>
+                        <img class="workout-img" src="screenshots/log-in.png" alt="MyMetcon login page">
+                        <br>
+                        <img class="workout-img" src="screenshots/create-workout.png" alt="MyMetcon create workout page">
+                        <br>
+                        <img class="workout-img" src="screenshots/past-workouts.png" alt="MyMetcon past workouts page">
+                    </div>
+            </div>
         </section>
         
         <!-- <section>
             <h3 class="project">Project 4</h3>
         </section> -->
+
+        <section id="skills" class="skills-container">
+            <h2>Professional Skills</h2>
+        </section>
+
+        <section id="connect" class="connect">
+            <h2>Connect</h2>
+            <ul>
+                <li><a class="nav-class" href="https://www.linkedin.com/in/sarawarnock/" target="_blank">LinkedIn</a></li>
+                <li><a class="nav-class" href="https://github.com/sarawarnock" target="_blank">GitHub</a></li>
+            </ul>
+        </section>
     </main>
     <footer>
-        <ul class="contact">
+        <ul class="connect-footer">
             <li><a href="https://www.linkedin.com/in/sara-warnock-40671085/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            <li><a class="contact fab" href="mailto:sara@sarawarnock.com">Say Hello</a></li>
+            <li><a class="connect-footer fab" href="mailto:sara@sarawarnock.com">Say Hello</a></li>
             <li><a href="https://github.com/sarawarnock" target="_blank"><i class="fab fa-github"></i></a></li>
         </ul>
     </footer>

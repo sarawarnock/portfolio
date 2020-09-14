@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: url('images/IMG_7066.jpeg') no-repeat center center;
+    background: url('images/IMG_6898.jpeg') no-repeat center center;
     background-size: cover;
     width: 100%;
     height: 500px;
@@ -24,26 +24,38 @@ header h1 {
     bottom: 1rem;
     right: 1rem;
 }
+
 /* update later */
 nav {
     background-color: black;
     padding: 15px;
     font-family: 'Montserrat', sans-serif;
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: baseline; */
     padding-bottom: 20px;
+}
+
+.headline {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 10px;
 }
     
 h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 42px;
     text-transform: uppercase;
-    color: #7DFAF2;
+    /* color: #7DFAF2; */
+    color: white;
 }
 
 .nav-class {
-    color: #FA7A68;
+    /* color: #FA7A68; */
+    color: #86C4F9;
+    text-decoration: none;
 }
 
 .navbar ul {
@@ -58,6 +70,7 @@ h1 {
 
 label[for="hamburger"] {
     font-size: 30px;
+    cursor: pointer;
 }
 
 .navbar ul li {
@@ -73,15 +86,16 @@ label[for="hamburger"] {
     visibility: hidden
 }
 
-a:visited {
-    color: inherit;
+a:hover {
+    text-decoration: underline;
 }
 
 .name {
     font-family: 'Bebas Neue', cursive;
     font-size: 42px;
     text-transform: uppercase;
-    color: #7DFAF2;
+    /* color: #7DFAF2; */
+    color: white;
 }
 
 .headline {
@@ -89,12 +103,13 @@ a:visited {
 }
 
 .bio {
-    display: flex;
-    justify-content: space-evenly;
+    /* display: flex;
+    justify-content: space-evenly; */
+    display: grid;
 }
 
 .bio-container {
-    background-color: #FA7A68;
+    background-color: #FFDCA9;
     width: 80%;
     height: auto;
     padding: 15px;
@@ -126,13 +141,21 @@ h3 {
     text-align: center;
 }
 
-.portfolio {
+.project-container {
+    background-color: #CCE1EA;
+    /* background-color: #BBE0F6; */
+    padding: 20px;
+    margin: 20px;
+}
+
+.projects {
     text-align: center;
     font-family: 'Bebas Neue', cursive; 
     font-size: 36px;
     margin-top: 100px;
     padding: 10px;
-    color: #7DFAF2;
+    /* color: #7DFAF2; */
+    color: white;
     background-color: black;
 }
 
@@ -167,7 +190,7 @@ h3 {
 }
 
 .proj-img {
-    display: flex;
+    /* display: flex; */
     padding-bottom: 30px;
     display: block;
 }
@@ -202,6 +225,13 @@ h3 {
     max-width: 100%;
 }
 
+ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
 footer {
     background-color: black;
     padding: 15px;
@@ -212,8 +242,8 @@ footer {
     cursor: pointer;
 }
 
-.contact {
-    color: #7DFAF2;
+.connect-footer {
+    color: #86C4F9;
     font-family: 'Montserrat', sans-serif; 
     /* color: #72FDB8; */
     display: inline-block;
@@ -222,14 +252,14 @@ footer {
 }
 
 .fab {
-    color: #7DFAF2;
+    color: #86C4F9;
     margin: 10px;
 }
 
 @media screen and (min-width: 900px) {
-    
     body {
         width: 100%;
+        display: grid;
     }
 
     .navbar #hamburger {
@@ -248,11 +278,17 @@ footer {
         display: inline-block;
         padding: 15px;
         font-size: 18px;
-        color: #FA7A68;
+        color: #86C4F9;
+    }
+
+    .menu {
+        text-align: right;
     }
     
     .bio-container {
-        background-color: #FA7A68;
+        /* background-color: #FA7A68; */
+        /* background-color: #818439; */
+        background-color: #FFDCA9;
         width: 600px;
         height: auto;
     }
@@ -274,12 +310,13 @@ footer {
         display: inline;
         padding: 15px;
         font-size: 18px;
-        color: #FA7A68;
+        /* color: #FA7A68; */
+        color: #86C4F9;
     }
 
     .proj-img {
-        display: flex;
-        justify-content: space-evenly;
+        /* display: flex;
+        justify-content: space-evenly; */
         padding-bottom: 30px;
     }
     
