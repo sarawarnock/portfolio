@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-	 crossorigin="anonymous">
+     crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat:300&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,6 +15,7 @@
         <nav role="navigation" class="navbar">
             <label for="hamburger">&#9776;</label>
             <input type="checkbox" id="hamburger"/>
+            <h1>Sara Warnock</h1>
                 <ul class="menu">
                     <li><a class="nav-class cl-bio" href="#bio">About Me</a></li>
                     <li><a class="nav-class cl-projects" href="#projects">Projects</a></li>
@@ -40,8 +42,9 @@
                 When I’m not learning to code, you can find me at the gym (both coaching and working out) or at a live music performance. 
                 As a life-long learner, I am constantly looking to challenge myself to acquire new skills. I am currently learning how to play the piano and read music!
                 </p>
-            </div>    
-            <img class="avatar" src="woman_avatar.png" alt="cartoon of woman with glasses"/>
+                <br>
+                <!-- <img class="avatar" src="woman_avatar.png" alt="cartoon of woman with glasses"/> -->
+            </div> 
         </section>
 
         <section class="projects-container">
@@ -49,12 +52,12 @@
         </section>
 
         <section>
+            <h3 class="project">Quiz App</h3>
             <div class="project-container">
-                <h3 class="project">Quiz App</h3>
+                
                     <div class="proj-div">
-                        <p class="proj-desc">Take a quiz to find out how much you know about recycling! 
-                            <br>This quiz was created using: HTML/CSS/JavaScript/jQuery. 
-                        </p>
+                        <p class="proj-desc">Take a quiz to find out how much you know about recycling!</p>
+                        <p class="proj-tech">This quiz was created using: HTML/CSS/JavaScript/jQuery.</p>
                         <p class="proj-link"><a href="https://github.com/sarawarnock/quiz-app" target="_blank">Repo</a></p>
                         <p class="proj-link"><a href="https://sarawarnock.github.io/quiz-app/" target="_blank">Live Site</a></p>
                     </div>
@@ -68,8 +71,9 @@
         <br>
 
         <section>
+            <h3 class="project">SmartenUp</h3>
             <div class="project-container">
-                <h3 class="project">SmartenUp</h3>
+                
                     <div class="proj-div">
                         <p class="proj-desc">Learn more about your favorite topic with this app! This app pulls
                             from the New York Times API and from the Listen API to bring the user both NYT articles and podcasts
@@ -87,8 +91,9 @@
         </section>
 
         <section>
+            <h3 class="project">MyMetcon Workout Creator</h3>
             <div class="project-container">
-                <h3 class="project">MyMetcon Workout Creator</h3>
+                
                     <div class="proj-div">
                         <p class="proj-desc"> 
                             Create a unique metabolic-conditioning workout with this app. This app uses randomization logic in the backend to create a unique workout each time you use it.
@@ -122,23 +127,44 @@
 
         <section id="skills" class="skills-container">
             <h2>Professional Skills</h2>
+            <!-- <ion-icon name="keypad-sharp"></ion-icon> -->
+                <h3>Programming Languages</h3>
+                    <p>HTML5, CSS3, JavaScript</p>
+                <h3>Frontend Technologies</h3>
+                    <p>jQuery, AJAX, React</p>
+                <h3>Backend Technologies</h3>
+                    <p>Node.js, Express.js, RESTful API</p>
+                <h3>Databases</h3>
+                    <p>PostgresSQL</p>
+                <h3>Development Tools</h3>
+                    <p>Visual Studio Code, DBeaver, Heroku, Vercel</p>
+                <h3>Miscellaneous Tools</h3>
+                    <p>Mocha, Chai, GitHub</p>
         </section>
 
-        <section id="connect" class="connect">
-            <h2>Connect</h2>
-            <ul>
+        <section id="connect" class="connect-container">
+            <h1 class="connect-title">Connect</h1>
+            <!-- <ul>
                 <li><a class="nav-class" href="https://www.linkedin.com/in/sarawarnock/" target="_blank">LinkedIn</a></li>
                 <li><a class="nav-class" href="https://github.com/sarawarnock" target="_blank">GitHub</a></li>
-            </ul>
+            </ul> -->
+
+            <div class="connect">
+                <div class="connect-item"><a href="https://www.linkedin.com/in/sara-warnock-40671085/" target="_blank" aria-label="View LinkedIn"><i class="fab fa-linkedin"></i></a></div>
+                <div class="connect-item"><a class="email" href="mailto:sara@sarawarnock.com" target="_blank" aria-label="Email Sara"><i class="fas fa-envelope"></i></a></div>
+                <div class="connect-item"><a href="https://github.com/sarawarnock" target="_blank" aria-label="View GitHub profile"><i class="fab fa-github"></i></a></div>
+            </div>
         </section>
     </main>
     <footer>
-        <ul class="connect-footer">
+        <!-- <ul class="footer">
             <li><a href="https://www.linkedin.com/in/sara-warnock-40671085/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
             <li><a class="connect-footer fab" href="mailto:sara@sarawarnock.com">Say Hello</a></li>
             <li><a href="https://github.com/sarawarnock" target="_blank"><i class="fab fa-github"></i></a></li>
-        </ul>
+        </ul> -->
+        <p class="footer">2020 Sara Warnock</p>
     </footer>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> 
     <script src="index.js"></script> 
 </body>
