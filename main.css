@@ -44,7 +44,8 @@ header h1 {
     opacity: 0;
     line-height: 40px;
     border-radius: 50%;
-    background: #BFC0C0;
+    /* background: #BFC0C0; */
+    background: #FFDCA9;
     position: absolute;
     transition: all .5s ease-Out;
     top: 20px;
@@ -78,8 +79,9 @@ nav {
     background-color: black;
     color: white;
     text-align: center;
-    /* padding: 0px; */
-    /* margin-bottom: 15px; */
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 15px;
 }
     
 h1 {
@@ -132,7 +134,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.name {
+.logo {
     font-family: 'Bebas Neue', cursive;
     font-size: 42px;
     /* text-transform: uppercase; */
@@ -149,7 +151,8 @@ a:hover {
 .bio-container {
     display: grid;
     grid-template-columns: auto;
-    background-color: #FFDCA9;
+    /* background-color: #FFDCA9; */
+    border: 3px solid #FFDCA9;
     /* width: 80%;
     height: auto; */
     padding: 15px;
@@ -320,11 +323,16 @@ ul {
     padding-right: 20px;
 }
 
+.connect-item:hover {
+    background-color: #FFDCA9;
+}
+
 .fab, .fas {
     color: #86C4F9;
     margin: 10px;
     font-size: 50px;
 }
+
 
 footer {
     background-color: black;
@@ -342,10 +350,6 @@ footer {
         width: 100%;
     }
 
-    main {
-        display: grid;
-    }
-
     .navbar #hamburger {
         display: none;
     }
@@ -354,9 +358,35 @@ footer {
         display: none;
     }
 
-    .navbar ul {
-        display: block;
+    .navbar {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
     }
+
+    .name {
+        grid-column: 1;
+    }
+
+    .menu .cl-bio {
+        grid-column: 2;
+        color: #86C4F9;
+    }
+
+    .cl-projects {
+        grid-column: 3;
+    }
+
+    .cl-skills {
+        grid-column: 4;
+    }
+
+    .cl-connect {
+        grid-column: 5;
+    }
+
+    .navbar ul {
+        display: inline-block;
+    } 
 
     .navbar ul li {
         display: inline-block;
@@ -380,7 +410,7 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
-        background-color: #FFDCA9;
+        /* background-color: #FFDCA9; */
         /* height: auto; */
         margin: 10px;
     }
@@ -417,18 +447,17 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
-        text-align:  left;
         grid-gap: 20px;
     }
 
     .proj-desc {
-        grid-column: 3;
-        text-align: left;
+        grid-column: 2;
+        text-align: center;
     }
 
     .proj-tech {
         font-family: 'Montserrat', sans-serif; 
-        grid-column: 2;
+        grid-column: 3;
         grid-row: 1;
     }
     
