@@ -32,7 +32,71 @@ header h1 {
 }
 
 /* Button Animation */
-#button-3 {
+
+.button {
+    display: inline-flex;
+    height: 40px;
+    width: 150px;
+    border: 2px solid #BFC0C0;
+    margin: 20px 20px 20px 20px;
+    color: #BFC0C0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+  
+a {
+    color: #BFC0C0;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+#button-7 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #button-7 a {
+    position: relative;
+    left: 0;
+    transition: all .35s ease-Out;
+  }
+  
+  #dub-arrow {
+    width: 100%;
+    height: 100%;
+    /* background: #BFC0C0; */
+    background: #FFDCA9;
+    left: -200px;
+    position: absolute;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .35s ease-Out;
+    bottom: 0;
+  }
+  
+  #button-7 img {
+    width: 20px;
+    height: auto;
+  }
+  
+  #button-7:hover #dub-arrow {
+    left: 0;
+  }
+  
+  #button-7:hover a {
+    left: 150px;
+  }
+
+
+/* #button-3 {
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -49,7 +113,7 @@ header h1 {
     opacity: 0;
     line-height: 40px;
     border-radius: 50%;
-    /* background: #BFC0C0; */
+    /* background: #BFC0C0;
     background: #FFDCA9;
     position: absolute;
     transition: all .5s ease-Out;
@@ -67,7 +131,7 @@ header h1 {
   
 #button-3:hover a {
     color: #2D3142;
-}
+} */
 
 /* update later */
 nav {
@@ -90,7 +154,7 @@ nav {
 }
     
 h1 {
-    font-family: 'Squada One', cursive;
+    font-family: 'Passion One', cursive;
     font-size: 42px;
     /* text-transform: uppercase; */
     /* color: #7DFAF2; */
@@ -142,7 +206,7 @@ a:hover {
 
 .logo {
     /* font-family: 'Bebas Neue', cursive; */
-    font-family: 'Squada One', cursive;
+    font-family: 'Passion One', cursive;
     font-size: 42px;
     /* text-transform: uppercase; */
     /* color: #7DFAF2; */
@@ -179,7 +243,7 @@ a:hover {
 }   
 
 h2 {
-    font-family: 'Squada One', cursive; 
+    font-family: 'Passion One', cursive; 
     font-size: 36px;
     text-align: center;
 }
@@ -205,7 +269,7 @@ h3 {
 
 .projects {
     text-align: center;
-    font-family: 'Squada One', cursive;
+    font-family: 'Passion One', cursive;
     font-size: 36px;
     margin-top: 100px;
     padding: 10px;
@@ -216,7 +280,7 @@ h3 {
 
 .project {
     text-align: center;
-    font-family: 'Squada One', cursive;
+    font-family: 'Passion One', cursive;
     font-size: 32px;
     line-height: 32px;
 }
@@ -230,7 +294,7 @@ h3 {
 }
 
 .proj-link, a {
-    font-family: 'Squada One', cursive; 
+    font-family: 'Passion One', cursive;
     font-size: 24px;
     line-height: 24px;
     color: black;
@@ -312,9 +376,13 @@ h3 {
 }
 
 .skills-container-images {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%; */
+    margin-right: auto;
+	margin-left: auto;
+    display: block;
+    text-align: center;
 }
 
 /* .skills-container .skills-container-images {
@@ -337,6 +405,8 @@ h3 {
 .skill-name {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    margin: 40px;
+	display: inline-grid;
 }
 
 .skill-name:hover {
