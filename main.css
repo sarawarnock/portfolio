@@ -6,6 +6,11 @@ body {
     width: 100%;
 }
 
+.name {
+    font-family: 'Give You Glory', cursive;
+    font-size: 40px;
+}
+
 header {
     background: url('images/IMG_6898.jpeg') no-repeat center center;
     background-size: cover;
@@ -85,7 +90,7 @@ nav {
 }
     
 h1 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Squada One', cursive;
     font-size: 42px;
     /* text-transform: uppercase; */
     /* color: #7DFAF2; */
@@ -136,7 +141,8 @@ a:hover {
 }
 
 .logo {
-    font-family: 'Bebas Neue', cursive;
+    /* font-family: 'Bebas Neue', cursive; */
+    font-family: 'Squada One', cursive;
     font-size: 42px;
     /* text-transform: uppercase; */
     /* color: #7DFAF2; */
@@ -173,7 +179,7 @@ a:hover {
 }   
 
 h2 {
-    font-family: 'Bebas Neue', cursive; 
+    font-family: 'Squada One', cursive; 
     font-size: 36px;
     text-align: center;
 }
@@ -199,7 +205,7 @@ h3 {
 
 .projects {
     text-align: center;
-    font-family: 'Bebas Neue', cursive; 
+    font-family: 'Squada One', cursive;
     font-size: 36px;
     margin-top: 100px;
     padding: 10px;
@@ -210,7 +216,7 @@ h3 {
 
 .project {
     text-align: center;
-    font-family: 'Bebas Neue', cursive; 
+    font-family: 'Squada One', cursive;
     font-size: 32px;
     line-height: 32px;
 }
@@ -224,7 +230,7 @@ h3 {
 }
 
 .proj-link, a {
-    font-family: 'Bebas Neue', cursive; 
+    font-family: 'Squada One', cursive; 
     font-size: 24px;
     line-height: 24px;
     color: black;
@@ -257,7 +263,6 @@ h3 {
 }
 
 .proj-img {
-    /* display: flex; */
     padding-bottom: 30px;
     display: block;
 }
@@ -487,7 +492,7 @@ footer {
     .proj-title-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 100px 100px;
     }
 
     .project {
@@ -497,12 +502,14 @@ footer {
 
     .proj-link-1 {
         grid-column: 1;
-        text-align: center;
+        align-self: center;
+        justify-self: right;
     }
 
     .proj-link-2 {
         grid-column: 2;
-        text-align: center;
+        align-self: center;
+        justify-self: left;
     }
 
     .project-container {
