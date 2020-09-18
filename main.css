@@ -76,8 +76,8 @@ nav {
 }
 
 .headline {
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    color: black;
     text-align: center;
     margin: 0px;
     padding: 0px;
@@ -89,7 +89,7 @@ h1 {
     font-size: 42px;
     /* text-transform: uppercase; */
     /* color: #7DFAF2; */
-    color: white;
+    color: #F2F2ED;
 }
 
 .nav-class {
@@ -105,7 +105,7 @@ h1 {
 .navbar label {
     display: inline-block;
     width: 100%; 
-    color: white;
+    color: #F2F2ED;
 }
 
 label[for="hamburger"] {
@@ -114,10 +114,10 @@ label[for="hamburger"] {
     float: right;
 }
 
-.navbar ul li {
+/* .navbar ul li {
     display: block;
     cursor: pointer;
-}
+} */
 
 .navbar input:checked ~ p {
     display: block;
@@ -140,7 +140,7 @@ a:hover {
     font-size: 42px;
     /* text-transform: uppercase; */
     /* color: #7DFAF2; */
-    color: white;
+    color: #F2F2ED;
 }
 
 .bio {
@@ -153,7 +153,7 @@ a:hover {
     display: grid;
     grid-template-columns: auto;
     /* background-color: #FFDCA9; */
-    border: 3px solid #FFDCA9;
+    /* border: 3px solid #FFDCA9; */
     /* width: 80%;
     height: auto; */
     padding: 15px;
@@ -185,8 +185,13 @@ h3 {
     text-align: center;
 }
 
+.projects-container {
+    /* background-color: #F3F3EE; */
+    background-color: #F2F2ED;
+}
+
 .project-container {
-    background-color: #CCE1EA;
+    /* background-color: #CCE1EA; */
     /* background-color: #BBE0F6; */
     padding: 20px;
     margin: 20px;
@@ -199,8 +204,8 @@ h3 {
     margin-top: 100px;
     padding: 10px;
     /* color: #7DFAF2; */
-    color: white;
-    background-color: black;
+    color: black;
+    /* background-color: black; */
 }
 
 .project {
@@ -208,7 +213,6 @@ h3 {
     font-family: 'Bebas Neue', cursive; 
     font-size: 32px;
     line-height: 32px;
-    margin: 10px;
 }
 
 .proj-div {
@@ -241,6 +245,15 @@ h3 {
     font-family: 'Montserrat', sans-serif;
     line-height: 26px;
     text-align: center;
+}
+
+.proj-tech li {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 3px;
+    line-height: 20px;
 }
 
 .proj-img {
@@ -279,12 +292,51 @@ h3 {
     max-width: 100%;
 }
 
-#skills p {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    color: #86C4F9;
+.gratitude-img {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 500px;
+    height: auto;
+    border: 1px solid black;
+    max-width: 100%;
 }
 
+.skills-title {
+    text-align: center;
+}
+
+.skills-container-images {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+/* .skills-container .skills-container-images {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.skills-container .skills-container-images figure {
+    width: 16%;
+    display: inline-block;
+    margin-bottom: 2rem;
+} */
+
+.skill-name img {
+    height: 100px;
+    width: 100px;
+}
+
+.skill-name {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.skill-name:hover {
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.81);
+}
 
 .icon {
     color: black;
@@ -440,7 +492,7 @@ footer {
 
     .project {
         grid-column: 1 / -1;
-        text-decoration: underline;
+        /* text-decoration: underline; */
     }
 
     .proj-link-1 {
@@ -455,50 +507,57 @@ footer {
 
     .project-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(100px, auto);
         grid-gap: 20px;
     }
 
     .proj-desc {
         grid-column: 2;
+        grid-row: 1;
         text-align: center;
     }
 
     .proj-tech {
         font-family: 'Montserrat', sans-serif; 
-        grid-column: 3;
+        grid-column: 2;
         grid-row: 1;
     }
     
     .quiz-img {
         grid-column: 1;
         grid-row: 1;
-        /* display: inline-block;
-        width: 450px;
-        height: auto; */
         border: 1px solid black;
+        width: 500px;
+        height: auto;
     }
 
     .api-img{
         grid-column: 1;
         grid-row: 1;
-        height: auto;
-        width: 400px;
         border: 1px solid black;
+        width: 500px;
+        height: auto;
     }
 
     .workout-img {
         grid-column: 1;
         grid-row: 1;
-        /* display: inline-block;
-        width: 450px;
-        height: auto; */
         border: 1px solid black;
+        width: 500px;
+        height: auto;
     }
 
-    .skills-container {
+    .gratitude-img {
+        grid-column: 1;
+        grid-row: 1;
+        border: 1px solid black;
+        width: 500px;
+        height: auto;
+    }
+
+    /* .skills-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-    }
+    } */
 }
