@@ -8,7 +8,7 @@ body {
 
 .name {
     font-family: 'Give You Glory', cursive;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 header {
@@ -182,14 +182,20 @@ a:hover {
 
 .bio-p1 {
     font-family: 'Montserrat', sans-serif;
-    line-height: 28px;
+    line-height: 32px;
     display: block;
-    text-align: left;
+    text-align: center;
+    font-size: 20px;
     /* margin: 10px; */
 }
 
-.avatar {
-    display: none;  
+.photo { 
+    display: flex;
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 5px;
+    justify-self: center;
 }   
 
 h2 {
@@ -492,7 +498,7 @@ footer {
         /* background-color: #818439; */
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: 1fr;
         /* background-color: #FFDCA9; */
         /* height: auto; */
         margin: 10px;
@@ -502,7 +508,14 @@ footer {
         line-height: 28px;
         grid-column-start: 1;
         grid-column-end: 3;
+        text-align: left;
         /* display: inline-block; */
+    }
+    .photo {
+        width: 400px;
+        height: auto;
+        grid-column-start: 3;
+        grid-row: 1;
     }
 
     .proj-title-container {
@@ -570,7 +583,7 @@ footer {
         border: 1px solid black;
         width: 500px;
         height: auto;
-        place-content: center;
+        place-self: center;
     }
 
     .gratitude-img {
